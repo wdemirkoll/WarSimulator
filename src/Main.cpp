@@ -24,7 +24,7 @@ int main() {
         // Display player info, money and main menu
         army.showForces();
         army.showUnits();
-        
+
         player.showMoney();
         showMenu();
 
@@ -42,6 +42,7 @@ int main() {
                     army.removePlane(30);
                     army.removeShip(10);
                     army.removeMissile(5);
+                    army.calculateForces();
 
                     Pause();
                 } 
@@ -66,6 +67,7 @@ int main() {
                             player.spendMoney(buyAmount);
                             army.addSoldier(buyAmount);
                             std::cout << buyAmount << " soldiers bought\n";
+                            army.calculateForces();
                         } 
                         else {
                             std::cout << "Not enough money or invalid amount..\n";
@@ -80,6 +82,7 @@ int main() {
                             player.spendMoney(buyAmount * 15);
                             army.addTank(buyAmount);
                             std::cout << buyAmount << " tanks bought\n";
+                            army.calculateForces();
                         } 
                         else {
                             std::cout << "Not enough money or invalid amount..\n";
@@ -94,6 +97,7 @@ int main() {
                             player.spendMoney(buyAmount * 50);
                             army.addPlane(buyAmount);
                             std::cout << buyAmount << " planes bought\n";
+                            army.calculateForces();
                         }
                         else {
                             std::cout << "Not enough money or invalid amount..\n";
@@ -108,6 +112,7 @@ int main() {
                             player.spendMoney(buyAmount * 500);
                             army.addShip(buyAmount);
                             std::cout << buyAmount << " ships bought\n";
+                            army.calculateForces();
                         } 
                         else {
                             std::cout << "Not enough money or invalid amount..\n";
@@ -122,7 +127,9 @@ int main() {
                             player.spendMoney(buyAmount * 5000);
                             army.addMissile(buyAmount);
                             std::cout << buyAmount << " missiles bought\n";
-                        } else {
+                            army.calculateForces();
+                        } 
+                        else {
                             std::cout << "Not enough money or invalid amount..\n";
                         }
                         break;
