@@ -21,7 +21,10 @@ int main() {
         std::cout << "Hello, I am giving you some money as a gift for testing my project. ";
         std::cout << "You can test the game :)\n\n";
 
-        // Display player money and main menu
+        // Display player info, money and main menu
+        army.showForces();
+        army.showUnits();
+        
         player.showMoney();
         showMenu();
 
