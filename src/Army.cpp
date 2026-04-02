@@ -30,6 +30,8 @@ void Army::showForces() const {
     std::cout << "=======================================\n";
 }
 
+int Army::getTotalForce() { return totalForce_; }
+
 // ===========
 // Add methods
 // ===========

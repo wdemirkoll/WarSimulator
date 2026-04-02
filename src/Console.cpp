@@ -18,9 +18,3 @@ void Pause() {
     std::cin.ignore();
     std::cin.get();
 }
-
-// Trying not to use user choice too much
-void Choose() {
-    std::cout << "Choose: ";
-    std::cin >> Choose;
-}
