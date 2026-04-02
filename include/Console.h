@@ -3,6 +3,7 @@
 
 // Console requirements
 void ClearConsole();
+void Choose();
 void Pause();
 
 #endif // CONSOLE_H

@@ -1,6 +1,7 @@
 #include "Console.h"
 #include <iostream>
 
+// Keeping the console clean
 void ClearConsole() {
  #ifdef _WIN32
     // Windows
@@ -11,8 +12,15 @@ void ClearConsole() {
 #endif
 }
 
+// Added pause to avoid bugs
 void Pause() {
     std::cout << "\nPress ENTER to continue... ";
     std::cin.ignore();
     std::cin.get();
+}
+
+// Trying not to use user choice too much
+void Choose() {
+    std::cout << "Choose: ";
+    std::cin >> Choose;
 }
