@@ -12,5 +12,8 @@ void Player::spendMoney(int amount) {
 // Show method
 void Player::showMoney() const { std::cout << "Money: " << money_ << "$\n"; }
 
+// Get method
+int Player::getMoney() const { return money_; }
+
 // Constructor (initial value ​​of money)
 Player::Player() { money_ = 100; }

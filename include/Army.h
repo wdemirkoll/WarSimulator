@@ -20,7 +20,7 @@ private:
 
 public:
     // Methods
-    int getTotalForce();
+    int getTotalForce() const;
     void calculateForces();
     void showUnits() const;
     void showForces() const;

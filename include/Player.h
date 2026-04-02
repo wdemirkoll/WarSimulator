@@ -13,6 +13,7 @@ public:
     void addMoney(int amount);
     void spendMoney(int amount);
     void showMoney() const;
+    int getMoney() const;
     
     // Constructor
     Player();
