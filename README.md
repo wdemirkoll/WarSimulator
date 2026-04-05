@@ -8,15 +8,21 @@ The player can engage in battles to earn money. Winning battles depends on the t
 
 ---
 
-<img width="672" height="360" alt="Project-Image1" src="https://github.com/user-attachments/assets/f361cdc1-d8e8-40a7-89b4-2acbf09179ca" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f361cdc1-d8e8-40a7-89b4-2acbf09179ca" width="600"/>
+</p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/60ce61e1-f077-4b70-b1be-63f86eb351c3" width="600"/>
+</p>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/842eb7c8-deab-44b7-8891-284a21657dc1" width="600"/>
+</p>
 
-<img width="267" height="215" alt="Project-Image2" src="https://github.com/user-attachments/assets/60ce61e1-f077-4b70-b1be-63f86eb351c3" />
-
-<img width="229" height="103" alt="Project-Image3" src="https://github.com/user-attachments/assets/842eb7c8-deab-44b7-8891-284a21657dc1" />
-
-<img width="166" height="198" alt="Project-Image4" src="https://github.com/user-attachments/assets/88fbac98-5b43-452f-9130-380bb6cbdf91" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/88fbac98-5b43-452f-9130-380bb6cbdf91" width="600"/>
+</p>
 
 ---
 
