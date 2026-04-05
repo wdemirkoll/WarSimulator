@@ -8,13 +8,7 @@ The player can engage in battles to earn money. Winning battles depends on the t
 
 ---
 
-<img src="https://github.com/user-attachments/assets/f361cdc1-d8e8-40a7-89b4-2acbf09179ca" style="max-width:500px; display:block; margin-bottom:10px;" />
-
-<img src="https://github.com/user-attachments/assets/60ce61e1-f077-4b70-b1be-63f86eb351c3" style="max-width:500px; display:block; margin-bottom:10px;" />
-
-<img src="https://github.com/user-attachments/assets/842eb7c8-deab-44b7-8891-284a21657dc1" style="max-width:500px; display:block; margin-bottom:10px;" />
-
-<img src="https://github.com/user-attachments/assets/88fbac98-5b43-452f-9130-380bb6cbdf91" style="max-width:500px; display:block;" />
+<img width="672" height="360" alt="Project-Image1" src="https://github.com/user-attachments/assets/0ea57551-cb7f-498c-a63b-14d672ead32b" />
 
 ---
 
