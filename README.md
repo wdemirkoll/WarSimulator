@@ -8,6 +8,8 @@ The player can engage in battles to earn money. Winning battles depends on the t
 
 ---
 
+## Prewiev
+
 <img width="672" height="360" alt="Project-Image1" src="https://github.com/user-attachments/assets/0ea57551-cb7f-498c-a63b-14d672ead32b" />
 
 ---
