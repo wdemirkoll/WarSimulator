@@ -16,217 +16,114 @@ The player can engage in battles to earn money. Winning battles depends on the t
 
 ## Requirements
 
-- **C++ Standard:** C++17 or higher  
-- **Compiler:** MinGW (GCC 7.0+) or MSVC  
-- **Build System:** CMake 3.15+  
-- **OS:** Windows, Linux, macOS  
+Before building the project, make sure you have:
+
+- C/C++ (C++17) compatible compiler (GCC, Clang or MSVC)
+- CMake 3.15 or newer
 
 ---
 
-## Installation & Setup
+## Verification of Installation
 
-### Step 1: Install CMake
+Check if the required tools are installed:
 
-#### Windows (Chocolatey)
-```bash
-choco install cmake
-cmake --version
-```
-
-#### Windows (Manual)
-1. Download from https://cmake.org/download/  
-2. Run installer  
-3. Select **Add CMake to PATH**  
-4. Verify:
 ```bash
 cmake --version
+g++ --version
 ```
+
+Both commands should return version information.
+
+### If Not Installed
+
+#### Windows
+- Install MinGW (GCC) or Visual Studio (MSVC)
+- Make sure the compiler is added to system PATH
 
 #### Linux
 ```bash
 sudo apt update
-sudo apt install cmake
-cmake --version
+sudo apt install build-essential cmake
 ```
 
 #### macOS
 ```bash
-brew install cmake
-cmake --version
+brew install cmake gcc
 ```
 
 ---
 
-### Step 2: Install MinGW / Compiler
+## Build and Run
 
-#### Windows (Chocolatey)
-```bash
-choco install mingw
-g++ --version
-```
-
-#### Windows (Manual)
-1. Download from https://www.mingw-w64.org/  
-2. Install (e.g., C:\mingw64)  
-3. Add `C:\mingw64\bin` to PATH  
-4. Verify:
-```bash
-g++ --version
-```
-
-#### Linux
-```bash
-sudo apt install build-essential
-g++ --version
-```
-
-#### macOS
-```bash
-brew install gcc
-g++ --version
-```
-
----
-
-### Step 3: Clone & Build Project
-
+### Clone the Repository
 ```bash
 git clone https://github.com/wdemirkoll/WarSimulator.git
 cd WarSimulator
+```
+
+### Build the Project
+```bash
 mkdir build
 cd build
 cmake ..
 cmake --build .
 ```
 
-### Run the Executable
+### Run the Application
 
 ```bash
 # Windows
 ./WarSimulator.exe
 
-# Linux/macOS
+# Linux / macOS
 ./WarSimulator
 ```
 
 ---
 
-### 🏗 Cross-Platform Build Guide
+## Troubleshooting
 
-#### Windows (MinGW)
-```bash
-mkdir build
-cd build
-cmake -G "MinGW Makefiles" ..
-cmake --build .
-./WarSimulator.exe
-```
-
-#### Windows (MSVC)
-```bash
-mkdir build
-cd build
-cmake -G "Visual Studio 16 2019" ..
-cmake --build .
-cd Release
-./WarSimulator.exe
-```
-
-#### Linux (GCC)
-```bash
-mkdir build
-cd build
-cmake ..
-make -j$(nproc)
-./WarSimulator
-```
-
-#### macOS (Clang)
-```bash
-mkdir build
-cd build
-cmake -G "Unix Makefiles" ..
-make -j$(sysctl -n hw.ncpu)
-./WarSimulator
-```
-
----
-
-### ❓ Frequently Asked Questions & Troubleshooting
-
-#### Windows
+### Clean Build
+If you encounter build issues, try a clean build:
 
 ```bash
-# CMake too old
-cmake --version
-choco upgrade cmake
-
-# MinGW missing
-g++ --version
-where g++
-choco install mingw
-
-# Ensure C++17
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-# Build dir error
-rmdir /s /q build
-mkdir build && cd build
-cmake ..
-cmake --build .
-
-# Architecture mismatch
-cmake -DCMAKE_CXX_FLAGS="-m64" ..
-cmake --build .
-```
-
-#### Linux/macOS
-
-```bash
-# CMake too old
-cmake --version
-# Linux
-sudo apt remove cmake && sudo apt install cmake   
-# macOS
-brew upgrade cmake                                 
-
-# Compiler missing
-g++ --version
-# Linux
-which g++
-sudo apt install build-essential 
-# macOS
-brew install gcc 
-
-# Ensure C++17
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-# Build dir error
 rm -rf build
 mkdir build && cd build
 cmake ..
 cmake --build .
-
-# Permission denied
-chmod +x WarSimulator
-chmod -R +x build/
-./WarSimulator
-
-# Architecture mismatch
-cmake -DCMAKE_CXX_FLAGS="-m64" ..
-cmake --build .
 ```
+
+### Compiler Check
+Verify that your compiler is properly installed:
+
+```bash
+g++ --version
+```
+
+If this fails, the compiler is either not installed or not added to PATH.
+
+### CMake Configuration Issues
+If CMake configuration fails:
+```bash
+cmake --version  # Verify that CMake is 3.15 or newer
+which cmake      # (Linux/macOS) or where cmake (Windows)
+```
+
+### Build Errors
+- Make sure you are using a C/C++ (C++17) compatible compiler
+- Check that all dependencies are installed
+- Try removing the `build` directory and rebuilding from scratch
 
 ---
 
 ## **Author**
 
 **Abdüsselam Demirkol**  
- GitHub: wdemirkoll
- 
- 🗓 Created: April 2026
+### 🗓 Created: April 2026
+
+#### GitHub: wdemirkoll
+#### Instagram: https://www.instagram.com/w.demirkoll/
+#### Email: wdemirkoll.dev@gmail.com
 
 ---
 
