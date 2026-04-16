@@ -8,6 +8,11 @@ The player can engage in battles to earn money. Winning battles depends on the t
 
 ---
 
+# Disclaimer ❗❗❗
+This project has been developed for learning and practice purposes only. It is not intended for use in a production (live) environment. Some features may be intentionally incomplete, and certain functionalities may not be fully developed or finalized. In addition, security measures are not fully implemented or thoroughly tested, which may result in potential vulnerabilities or unexpected behavior. Therefore, it is strongly advised not to use this project directly in real-world or critical systems, as it may not meet the required standards for reliability, stability, or security.
+
+---
+
 ## Prewiev
 
 <img width="753" height="479" alt="Ekran Alın2222tısı" src="https://github.com/user-attachments/assets/8c156704-d368-4519-9152-3135148d8ba9" />
